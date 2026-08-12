@@ -25,7 +25,7 @@ public class SexyFpsDisplay implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
-		LOGGER.info("works i guess lol");
+		LOGGER.info("onInitializeClient called");
 
 		AutoConfig.register(ModConfig.class, GsonConfigSerializer::new);
 
@@ -34,9 +34,9 @@ public class SexyFpsDisplay implements ClientModInitializer {
 		ScreenEvents.AFTER_INIT.register(((client, screen, scaledWidth, scaledHeight) -> {
 			if (screen instanceof PauseScreen) {
 				Button fpsSettingsBtn = Button.builder(
-								Component.literal("Open FPS display settings"),
+								Component.literal("Sexy FPS ⚙"),
 								button -> client.gui.setScreen(AutoConfigClient.getConfigScreen(ModConfig.class, screen).get()))
-						.bounds(10, 10, 200, 20)
+						.bounds(10, 10, 100, 20)
 						.build();
 
 				Screens.getWidgets(screen).add(fpsSettingsBtn);
