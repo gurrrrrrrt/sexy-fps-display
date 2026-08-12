@@ -6,3 +6,6 @@ https://modrinth.com/mod/cloth-config
 enjoy my dumb mod :)
 
 (not the best code i guess)
+
+(in the corner)
+![preview](https://shot.rip/cdn/ide4le.png)
