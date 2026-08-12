@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "sexy-fps-display",
+	"version": "${version}",
+	"name": "Sexy Fps Display",
+	"description": "A \"better\" fps display mod, because all of the ones I have used dont look good/are inaccurate.",
+	"authors": [
+		"gurtkurt"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/sexy-fps-display/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"com.sexyfps.SexyFpsDisplay"
+		],
+		"fabric-datagen": [
+			"com.sexyfps.SexyFpsDisplayDataGenerator"
+		]
+	},
+	"mixins": [
+		"sexy-fps-display.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*",
+		"cloth-config2": "*"
+	}
+}
