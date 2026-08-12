@@ -4,3 +4,5 @@ you WILL need Cloth Config API for this mod to work
 https://modrinth.com/mod/cloth-config
 
 enjoy my dumb mod :)
+
+(not the best code i guess)
