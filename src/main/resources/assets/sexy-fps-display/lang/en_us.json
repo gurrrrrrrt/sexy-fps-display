@@ -2,5 +2,7 @@
   "text.autoconfig.sexy-fps-display.title": "Sexy FPS display settings",
   "text.autoconfig.sexy-fps-display.category.position": "Position",
   "text.autoconfig.sexy-fps-display.option.x": "X Position",
-  "text.autoconfig.sexy-fps-display.option.y": "Y Position"
+  "text.autoconfig.sexy-fps-display.option.y": "Y Position",
+  "text.autoconfig.sexy-fps-display.category.display": "Display",
+  "text.autoconfig.sexy-fps-display.option.graph": "Show Graph"
 }

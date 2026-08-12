@@ -1,5 +1,7 @@
 package com.sexyfps.hud;
 
+import com.sexyfps.utils.Colors;
+
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 
@@ -7,11 +9,11 @@ public class FpsRenderer {
     private static final int HEIGHT = 14;
     private static final int TEXT_PADDING = 5;
     private static final float SCALE = 0.75f;
-    private static final int BACKGROUND_COLOR = 0xCC101010;
-    private static final int CORNER_COLOR = 0xFF101010;
-    private static final int COLOR_GREEN = 0xFF55FF88;
-    private static final int COLOR_YELLOW = 0xFFFFD166;
-    private static final int COLOR_RED = 0xFFFF5555;
+    private static final int BACKGROUND_COLOR = Colors.rgba(16, 16, 16, 204);
+    private static final int CORNER_COLOR = Colors.rgb(16, 16, 16);
+    private static final int COLOR_GREEN = Colors.rgb(85, 255, 136);
+    private static final int COLOR_YELLOW = Colors.rgb(255, 209, 102);
+    private static final int COLOR_RED = Colors.rgb(255, 85, 85);
 
     private final GuiGraphicsExtractor graphics;
     private final Minecraft instance;

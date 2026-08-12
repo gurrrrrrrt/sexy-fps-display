@@ -31,12 +31,13 @@ public class SexyFpsDisplay implements ClientModInitializer {
 
 		HudElementRegistry.addLast(id("fps"), FpsHud::render);
 
+		// chatgpt told me to do this. prob a better way idk never made a mod before lol
 		ScreenEvents.AFTER_INIT.register(((client, screen, scaledWidth, scaledHeight) -> {
 			if (screen instanceof PauseScreen) {
 				Button fpsSettingsBtn = Button.builder(
-								Component.literal("Sexy FPS ⚙"),
+								Component.literal("⚙"),
 								button -> client.gui.setScreen(AutoConfigClient.getConfigScreen(ModConfig.class, screen).get()))
-						.bounds(10, 10, 100, 20)
+						.bounds(10, 10, 20, 20)
 						.build();
 
 				Screens.getWidgets(screen).add(fpsSettingsBtn);

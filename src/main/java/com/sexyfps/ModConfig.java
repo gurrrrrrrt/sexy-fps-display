@@ -13,4 +13,7 @@ public class ModConfig implements ConfigData {
     @ConfigEntry.Category("position")
     @ConfigEntry.BoundedDiscrete(min = 5, max = 1000)
     public int y = 5;
+
+    @ConfigEntry.Category("display")
+    public boolean graph = false;
 }
